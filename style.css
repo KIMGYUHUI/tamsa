@@ -1,0 +1,304 @@
+
+/* css reset */
+body,h1,h2,h3,h4,h5,ul{
+      padding: 0px;
+      margin: 0px;
+}
+
+body{
+     background-color: #F2F2F2;
+}
+
+header{
+     width: 100%;
+     height: 180px;
+     background-color: #086A87; 
+}
+
+.mbclogo{
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.탐사기획팀{
+    color: #fff;
+    padding-left: 40px;
+    display: inline-block;
+}
+
+.navBar{
+    float: right;
+}
+
+.navBar ul{ 
+    list-style-type: none;
+    padding-top: 40px;
+}
+
+.navBar li{
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0px auto;
+}
+
+.mainImageSilder{
+    margin-bottom: 5%;
+}
+
+article {
+    margin: 100px auto;
+}
+
+.mainImage{
+    width: 100%
+}
+
+.articlereport{
+    margin: 0px auto;
+
+}
+
+.articleTitle{
+    font-size: 35px;
+    margin: 0px;
+    padding-left: 15px;
+    border-left: 10px solid black;
+
+}
+
+
+.artContentContainer{
+    display: flex;
+    margin-left: 20px;
+
+}
+
+.articleImg{
+    margin-top: 7px;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    width: 480px;
+    height: 320px;
+    background-image: url(http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/artimage/2019/10/15/groupnews_a/hsauthor.png)
+
+}
+
+.articleContect{
+    margin: 30px auto;
+    padding: 10px auto;
+    font-weight: 900;
+    line-height: 50px;
+    width: 95%;
+    font-family: 'Song Myung', serif;
+
+}
+
+.articleContect h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+
+}
+
+.contactWorks {
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+
+.contactWorks h2{   
+    line-height: 1;
+    
+
+}
+
+.contactWorksimage{     
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+
+
+
+}
+
+.contactWorkskakao{
+    padding-right: 10px;
+    margin: 0px auto;
+
+}
+
+.reportButton{
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px 40px;
+    border: 3px solid #000;
+    background: #fff;
+    margin-top: 20px;
+
+
+}
+
+.email{
+    text-decoration: none;
+
+}
+
+.jebo{
+
+    color: #000;
+    text-decoration: none;
+}
+
+.repotrButton h2{
+    color: #000;
+
+}
+
+#report{
+    margin-left: 25px;
+    margin-top: 25px;
+
+}
+
+#material{
+    margin-left: 25px;
+    list-style-type: none;
+
+}
+
+#tamsa{
+    margin-left: 25px;
+    display: inline-block;
+}
+
+#member{
+    margin-left: 25px;
+}
+
+.LittleTitle{
+    text-decoration: none;
+}
+
+
+.materialBox {
+    margin-right: 15px;
+    margin-top: 20px;
+    text-decoration: none;
+
+}
+
+.materialBox h5 {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none; 
+
+}
+
+.materialBox img{
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    width: 280px;
+    height: 280px;
+
+}
+
+.memberContainer{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-gap: 50px 170px;
+    
+}
+
+.memberImage{
+    width: 150px;
+    border-radius: 0%;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    padding: 30px 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
+.tamsaBigTitle{
+    margin: 20px;
+    padding-left: 20px;
+
+}
+
+
+.tamsaTitle{
+    font-size: 35px;
+    margin: 20px;
+    padding-left: 10px;
+    border-left: 10px solid black;
+
+}
+
+
+.tamsaLittleTitle{
+    margin-top: 0px;
+    padding-left: 50px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.a, .b, .c{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+
+
+}
+
+.a{
+    background-color: yellow;
+}
+
+.b{
+    background-color: green;
+}
+
+.c{
+    background-color: blue;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .a{
+        background-color: tomato;
+    }
+
+    .b{
+        color: greenyellow;
+    }
+
+    .c{
+        color: orange;
+    }
+
+}
+
+@media only screen and (max-width: 700px){
+    .a, .b, .c{
+        display: block;
+        width: 100% 
+
+    }
+
+}
+

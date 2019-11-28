@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900|Song+Myung&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+    <title>MBC 탐사기획팀</title>
+</head>
+
+<body>
+    <header>
+        <div class= "mbclogo"> 
+            <a href="http://imnews.imbc.com/newszoomin/groupnews/index.html">
+                <img class="mbclogo" src="./mbclogo.jpg" width="60"> 
+        </div>
+
+        <div class= "탐사기획팀">
+            <h2>MBC 탐사기획팀</h2>
+        </div>
+
+        <nav class="navBar">
+            <ul>
+                <a href="#report">
+                    <li>제보</li>
+                </a>
+                <a href="#material">
+                    <li>자료창고</li> 
+                </a>
+                <a href="#tamsa">
+                    <li>탐사보도</li>
+                </a>
+                <a href="#member">
+                    <li>구성원 소개</li>
+                </a> 
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- <div class="mainImageSlider">
+            <a href="http://imnews.imbc.com/newszoomin/groupnews/groupnews_4/index2.html">
+                <img class="mainImage" src= "캡처.JPG">
+            </a>
+        </div> -->
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./캡처.JPG" class="d-block w-100" alt="..." height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./세월호 수정.JPG" class="d-block w-100" alt="..." height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/artimage/2019/10/15/groupnews_a/hsauthor.png" class="d-block w-100" alt="..." height="500">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+        <article id="report">
+            <h1 class="articleTitle">제보</h1>
+            <div class="articleContect">
+                <h1>MBC 탐사기획팀은 24시간 제보를 기다립니다</h1>
+                <div class="contactWorks">
+                    <img class="contactWorksimage" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEUAAAD////t7e339/f19fX6+vr09PTu7u4HBweRkZH8/Py0tLTDw8OmpqZKSkqfn58sLCxUVFR4eHhoaGji4uIeHh5cXFzn5+cUFBTS0tJwcHA8PDwNDQ1jY2NZWVnc3NwYGBhNTU3Hx8c5OTkjIyNDQ0N9fX0yMjKFhYW7u7uLi4uYmJiioqKsrKymR2h/AAAXtUlEQVR4nO1di3qjKhBWUTQktVHxAokSTbwk2bz/6x3MpU10jJe22z3dnT3f6XwGkF+QnxkGVEzT1JAqRfuhivIP4f9eUTQpl0s/VFHQTxelholqwD9VuSKUnfaHKuZfg/Db+9LXKX/BWPrz+fDnI/xD+tIX9tLvJuQvl79gLL1o381a/xj/H+M/Uf6CsfTn8+HPR/iH9KUv7KXfTchfLn/BWKqeVcNAP1QxlH/y/xfruyvwxWL9Q/i/l38I///y2xB+24P8bQij74L4+3rpd0H8je/hN0H8nSPN90D8rWNp9Ptu9S7PEFrrz0bfCfGDN3pW0ScIrfzwOjvMQCmKouOX53KEL7++vnb80iPVJfss6O4ezxCmh+3pdPwlb/8ipf57U2avp9nrw5Whygn6qVZP48q5KUepnTYFn4RQWTtumekmMYyzNSmNyYtCNJNgrOL3K9+oIDWMubfuBNEz0uRcCXGI8LlAXdfPCkFUo5qKQnK7Ynyjooc5T55A6BtLt+6GhZp+XzTRQsyoqlL0JyAkLPCcZwh62WLr7hgOzyViKfIPDSnTWEjN2xX1owrBt0pPyL718qcA+vmw5IpApizs3PkxElitPa0mRtcrbz99g4JE6a6e138A4y/d7VxDun4uWteFEWoqlcr1Cv6Y8qFyKOW9AIfMaXZuyhC6FC2QCGWfpR8F9o4QTc1OVLrw3LKv9i2EEN6dm8tWJBpRQ4FCJsdns74Hvt1smqJ/MLtG2LLY9QJsIrTWELNs3IRlmi5kC2oEU1pT5CcIefgzUlT8uqoAgK2pZrMNfdveABB5vN9jJkcZKgdo9Db0fUh5J5sp2akrmQxoDZs3YDcRLou5C8yA1m46Z6HJZMn482gQTc8eVjaHutvWq9IehNWKQ5M8CXF2IqbA+DOJHumTsutEzJwYBJgsmzOcFkJuZ0nst/NaPPAoIZIKP4voDX1idmSg2IuhMTHNT15zitNC6K1EtvSgMcqL04Ukxs+hbP0D2RfMLaCZmpXav9QhCFm4V7wlUIAXx0xHn0KDH1GwcCsbBJgf1QEI4y0zTKYEAJVaQVAKDX1KXScTvSpUu4CmolGQz9hAhAgx5CXQbCG1EyEnE+oHmPqDjI/CheJBVVsH5YsaDkJYMmKoQrjJFignTxIafg7fTxKi7tceMA4qO747MiH71xCEWf24wvnMBiEGMQ1RHx0/VdoEMDw7Pq7AUXDHy1eTyvFrAMLgglDauVUOzdvzOA9NNIS1voLo9xHYgstqdyLnSdJwhAZCxmsODVkrL84ugSrTEMp6THxASNv7HAJYFrnAlzQjEGKso19baNBa8RXRrmkmUbY+kejN0xYEuOJbiq+JVS/uR8jQjWHN4w6CuOWlJtBvJ3q8WPENUJ3cdfWFcUs8DOFtKEe4WKbA9G/p8UxMof6P2LvkmIMt6PDA1N4Tj0OIEau2EMSdF4hwCvUjgA+HKMhU5ynoFU14oGF1PMJbPRCu/BSY4y55mf1Sr7f/eqJHWJPGBOTXdpzgPBS9JR6AcEfuGV1lMyvYAK3ocsbUKZw9JQ/WX4IAeNCWlyQCP9S3H6FTkcvYdRvcaeVD6x6+Wy6yKdQ/wbRH9DUGrSXuBCq9TzxkLL0hrA3Ns4LEaQW2YrERmfEbiF7S4Aw0B6MiKOrFk/vEoxCii6tbN+hilQBTpZ2b7oUxuK4onIjQEDMP6qJ+ke5biQchvFQaI3qjWn3BygAwGCO+OtymB/2u+xBPct3Xgwy4MrErliwjzVxDEB6uDKvdca4Q3AEgrnl5ZMYgytY10psGVMIs8NL2rZXSjRkFcvUjTBcXhq3nZW+DO6Jh4gBWWcTLghkDCA2FqDcNaO9iNeYQwC1PBZhrAEJm6rd38I6pNT12gBncmq94qJG+uqIQ96Z5m/fcE32GfBBgzu3zitg0hBTpiLaNazVOAWtqzXMucDNxQ9HlOziJ6DWxdiGAKc8FhXP1I7RDBpIyMUPPBu4W8dxT+6h/mleAYLHjgAFnBdK66VhZGIIQLS7jUoupkRokvD1qr+OcM9xF2aR1ZYSyz6HlT79yS9qRa8BYWtrm/JwaomyaBABEJbA9SmDvNdbwZKI3hMUb74UVrRX/UM3qtxrO1YfQ8vNAO3XeFWHuABCtIC3mkNVPqBa+Ne9IhHIms+MNT1HkR1F54HPanb0PoS/5UHu5tDjEwsgMHLfdiErgpAzIRYlqCm0a0SNWtlpQmocS4HHxJHsPwvVGWTl4jlo0+qYgtbBdwExLgmrfWtnXBQppDXMC0YtMcZu+vihSVge3jgN5kt0LniG0NtHWxnPjGbPR+RZa1gqC2j/1mBiJUBCVTrLoF2nVcmZaUT4LfqnG0+xPEFqbjeX7SxufniHUTba3oeW3IK4eqJ+EVGjMNLRwgkXPWFpsHxdzI9+38qP3QnuydyO0/PV6J59ScEb4hI4NKrgLOEzSgGfme2KKVEqxoLirnGdEz/K6i97Ho0YbRbEPPAv71hS6EfqW7OeR5EM50jznYfQrKyGIduyqN3ubaBoxKQoJGU/2RMtSvrxU7k3k/dJDuUd9xXUitGQREt/GknOa18u41G2kI5SBbq/UKyi+eHsx1TShGuEUosdZ4DbMUcmCil2VTO/LjjsR+vItjM5scUP4jKwIZwEE0eYePbvDw9CU01s1xBOIXqXLFkD5+NPDpm3vQnwIIJRtF8kid9Haj4Yh1IkQ22bMwwXiQVBKMA1RKJVwPNEbIksfAUbRWlbPPipsyKK/RAis4/s7Sz6luijlHeFzXpbto8QAxNSNqZC2hgiRqbUM8AFEn7Gk+Y778j7JQcnIkHLgXurLtltfiz2zxQBe1sO9A0G0pemdCUzqMXQ00ROism2LivzNOp/Zde8fUg6AUA4vyjtEifDlKR++G7UsjwGzf+XxPRPGeSozlujxnK3aAGULzkpEBpYD9NJd3Qv8zeatDYch1JEgeQwsoi69AAlBn888wAIRzXhzSiiJfpdWDmJDywEQrs/Nd5tAXBEOWlIXwoYg1otdi/7sLUWjL0lzQlhXLZ3Fai/R3zE+FDEUvb9QkvEXQ531ktPBVtzywMCjmZ6EkgebXVS+QUnFxfDQgQ6E683b8LW0qbiMSwMIWieZAgU0lG7JBBpL9C+B27I9N1ZyiE00uBzcgdC37hCGT+zLloLDxIFasVDmZNRKuEFTrwlw7a8V71Bd1ncHlgOPNHIkvUNojKuZWEFexrJSMjaiHIPGXnOQke/gxqsKMeaJw4wvxX/r/0v71rsGMjWh2wDwhy2LaDG4HN0IU483SqgHmaCqThdf8tD6QAjlnM9/f3rLfCxTG8JOAC/jsvD32bB4fkKEnNE2C5C2nCfxhSPrA7LFe6FXhKN4DFHDc6BWrJYzPGQl3KAsdpsArbUSudWBaUOr8YQP71/vaAJCHVGzSkG/ZnDxivVkZ6rjBo28kR/t3OqF7odXYxhCJboiHBdNJ9AhB1b7l5VXCa0nO9IWTtHcuCTH9ogfZpchYVx9+hAqW3vC4ryaZUcbWNTYHfg8E0/ZWlohwaG5PCjNOCsoKjFhT0A/wqVjjGRqtQ6CY0LxAG/4pnCPIdafZKcaP7bHKX+zLH7tx1bjzPhxL0J7zNL8DaEhp28OFEqwLg6OMDuzI8zyX1DwnL/kwXxsNWqFvDj9CMfHz2PmJR07yNbu0e5aJkCmesrncEZ/W8RzTR29L4DM+xGOZPxaQSnEiBeJ+NEWeygXCTXu/eraW7fxOd8fQzTKRSC5tR/haMbXTWYHz/YAJq/2K77srLjLLq1B6h5mQHTAVfyIx6dw9Or/MIRj+AchaSU+3yK3Oro2e/RVS4bBJ+cEuV3fZc35UYiR9fl8hBQ5PQDrGdyMV3WYeX0G19mW1UIaeLPkyQblM0TPfQEXBfSPIxzOsPvc693kqFj2odqesoydXhljWZYtgqAAYykbEnhVHVY+oj4DRhp1BM0SbCbg3oCWbFJ+yJfzk/zHl37J3WQ76ByFwPuFx/gLhiAcYeNjLDwAoAV2vo3tvp7m8/np9GsGxh/BEnOukuGMT/b9kQpXhEOIPmQl6DONO+q/9ne7nd/98m1tYNkudvNsBB8ytz/apDNSoU30AbQ/yvn1cuh/NQFJZxzaNOnwFA2m/kEIh3j1a+VEwbWLdLabWbxnkzwIsEjnNhSr7vAdFQOp3xiAcJhXHxt7uoQAOrygJi0gz8ZzcZJKQ4sUXLbjitlXn5syBOEgn7fBWAptX3GSQs5XqFrlUNRtt6wD25NGCM520K4f212HeBg/1wjX/rvjaTJClm2hbaqJ42RnmyEsSnCDUof4yfYo6sUq8bqF8uWurw1HKJ/87q1yHQh7iJUYpxJqwTiNL3FehKgzN4C2hoGydBy6MM9OHY35LjB8pa5C9SHULxHK9tus34IA2gj71vFrog9fJcBWE1oSoHZjZyIEL9MB05Z6h3yeM/3qCyB6pkAnJay47KgDqF8i3NRraZtb9brH0m6LHqvVyltvWgg9J8ZvEVA6Ctm+XK16Zy7WKlm+ZlR9C8ZjTOEAxJKvqNlL/YgVjlV30bdn24nwCQ3SWc43t+W4O4C5q6G7OD1dFTjY9nXVXby158zU6uW46y1CZnGgo0puYqiXqFkVrzebOxfwBISoWgV+1GxBK16dqNlIjMXc89Nt62HcJMqddLmYh5g+uO6xsJpBe7WUrp2RPupnbmxZ9/PG8YxPXnJob4JXngghrVwhRUqe2uBMzcq5tyvYAofa9eiBWy4tW7ai2s4Qkww/pX5pjleB8vD2j2V8JHjuKK0BZM3z/d6APPYqDef5ziuCx5bclCl3y2SXCWoSEzdzGShvRiaea+duaQhX7KrU7+EAhE8sevwrTerYokeJuCPq9xzMZcipyl7hVZyv8u3S93crqQQ8UaQppVKmIQOIuke0giDuXCdbPOPD81j60GNGIhR85fn+Q2ucW9AW7+cQAc+F0sXelm9dICHuyrR2Chznv4QmMAqFOG+8aeYSGYdCoDduzF6e2PhIjjSPOToQdhA9fXUAp9qGx9m+vmu36x6ZVDIlWZizonjFe6IbC0br0Mx6Xzi8Rk/3M8jBtSkStg8RcK8rwv55qXnqYHyCtWoFcHjkJWzeG61fi5pltRNjIWodhVjIeYHWxeJqZsTQ/H1TxJmqd+QieADCa5x3m+hNs0ocpUUTkZeP2qFPEKpdskRmMhkm4ZPE5iyG9j9U8YsG5pLtaA5pww4LGIez2Nm05mq+l7IQPecoQJG9VlAJkT5PPINaMZp5RYc7HA1BiOEQQKJVrXAepT7MwA710b53nUhkRELsixkQR+jF92e8ULX7x/q2EjEEIYE33KFZHC9bL+GOr7ORSwBnBdczTNmCel9i4wBt1PEP3DXa1K9jfcB7mGa0Hauvo7nrOXK+vnnMveQxexvNxvje6/38RA6w/Uv84a8c2H1oVUWugbkGIGQaapKMGuqzIrGiTWMys+NbMWGLPb4EgGNK6he4JzHBszwB9iLxyrvfBfBWzhCERuuuBi24cw67eZjMLL1VZrYfR49CUKgShkNBiSqG5KJHG9gka3lVgsi9TTwY4b5FvoxyXhvOjcnM0rOxNnrRX8fnsEU5m9FCqQ3JRWdbaB9wfEjPHn8ysg2dqkHe8hkeeF7zoPWQVFqkCzo+Po+cSZ4gShAeeOoeUWcl0FEVZxaHtLEbYBDCx/34KjPiqjF7qvvqlpdYjN+Pb2hyKhM+kgTunTBksxI6E8CZFcIk9xv8ce0RfmyJZ/vxL4yUFW7eZIlIAlzJQXc00WOKNSYhPvxEtOZBvgD1L6GNOvbLUtTHzDR83g9Ho/chxCb3bKV1XmTOc6aNJ/raGUNMgRpLI8gM+4IH2CkC3OH+6rjam/cPmmT11vZ7iMBu9YvH90KjIix5uW49vZWniClEf9mfIFCT6HUt7MmOaBZ5rRDwnVLO7Bc5z31LfF3Hv4PYQpjYd0RvsDUv6w1DDYCxnU0i+lDODwiBttcZYd/hPNqpbEOMlOUhOYi7xNf1w3eI7bNNlu+MTxfLYqu0vGq2l5976Eiir1tCY5oJB7nLd7EnO2bblhfa99erQ/5ydwLPbYW02yN8fwLPQuE7v2VNONxn/XMRWJEQQ3hfgW72HekjX+D2SoGkaL9w3PdWeVsDvkF8dgLP5fjEJsKUbzU0muhvCgpFx09yBtAXkJ+ZQWu5q3Zve9JgxK11/CtECOGFQtW5dVngfewZDt/gTrt8COVrXYH3pLdcdS6Slq94U8dseBW+MP99XFtkdSA8W08I7aN4o7TE4YrJJp25dzut9MkJPP3Uz3ACLqEn/EVjajNW/wyx88y94y4BAKZykJlA9HWBrfP5gTRmbxqspQG0ape4h/r4sUYke/QE4QIEKEdRZk47ZReFA44ekO9iH/VjGkMudyV1D7h2nT/Gl0ZWB0JjXjqAI34b7BZTiL5uHm3Qmbr91E8Q8VuzyFryotQYakbQRgDCLSPmSwlFi5Z5SsnEo/YoGZi4n/pVkuTQu7gq6olWM0Y4gk5oZactBHCbB3Qa0WM84vi6fupXkWNDgVj1Nhajtf9w00JYqkcbPPMynzEyjeh1bcQRhLrZf5AvTaGwcmXprjMe90V9eWUFRoqs8tdwmEn+UUVaGr178VQPPHl06UWzXoR8CR5btFq9jtgj9zEhuCNIX5L61aInYQ52tB0vmwdhNxHuYvAk6Tx/3dNpRD8m8XPq1xGlFF8KRLpjQ5+X8Q8vjaXV1pcDlhsgX2of5+Ykop+mdFC/NLtC7c294q2gg/h2TSoZ8n0Lxc4P4eQvA006YwiifnQ+w+CteXH2mkN7PJoy5Ltr9jabSvRn79CkXC3qrxGGtafnWiDBaFGC30cYi3Cd2nsx7GC9FtFP8QPcFPRA/YSYmNSLXOIuen+ewefujkO4drYLdbRj+8JsHzuE/576kUmxKUwhmHmXhmgsB0+/HoPQSpL51CpO9AO8U//7OXa6nI+FcmaN9cez+4SE2BNQ3YNwnTj7h/7WUnSELhsMEKBcv/9ds5h6uTJ1MkDrg1JYKzuiOO2B+BzhOkjPtlS3EFMLKRWy+2QPwi67DrLFfn56OdaS1YkYJlNEEBFq9Z+WqOFCGhVTEVq7IuGV2yNF4R4Wiz1+m3mYIRVXfJn84Srzs4Q1eeB6TxB6V9B54Lgo+rmci6PrrMhWMqggIcNYmI8/nRWiYeeYT/x2npXOT+fHf5wdZ4eqqIoOqYHyNylc+Y+7Mrm82Hgc9e+e58VxHARJ4jhOmqa2bed5vpKylVJKWZ5ldxZ/F613mzrqN/I3UbSWEm0u4m98KbudN3/23aen3z9cebequ25gD5U0dmwn6UuVA7ICpSwl7u2drJL6Eb2Lx53dk3Z61oZRZL1J90Nqy2atWJsxGUaKdW7KO4mefKb2078lu97Uh8FE62/7hnNTPhth5K8jycHt+Npvk89GWM8w1iOC9L9ePhnh5ZAUf1AA+2+Sr2hDy28FoH6jfCbCSJLWuv7P+qkI6xEmOgcQt9ZUv1E+D6G1qxtODqJy/vEHAfzMNryc+HbXP8dNE75KPguhbLj1uh2U8gfIJyGM/Poopj8S4h/Rkb5YarNtv5ByVvb7q/J2ZYhSG4Lyz8hc3cprrZ1egJ9exheoNIxmc5oV/rli1ta8QMAv2BxdmHJ2d2hSLop5OZHu7sogxez8yRxVzlWhGWMI/MmkYwu8IjRvVTTNc/D1w5Uhijkmca9iUtZVYEhHVqyN0KzDzj6trlMVyrrA1x+un4DwoX0lxLG99NMVs/NlGfseKfX/zm7Nd8WktHHlmRKGvWnMIeXcFNqbxqAjCkSKbMdbPd4VqjWvdCqaMHvTjFHEgDT1uziwQL0D4UUbVLNhNxv8FDBYn4ZihuHAAuULB/XSUcqoHvhZynsP6k+soJ8u0Fj6s5Q2H/4wBWD8H6aAjP+zlA+PpX+8AvPhT1L+AoR/SF/6wl763YT85fIXjKUX7btZ6x/j/2P8J8pfMJb+fD78+Qj/kL70hb30uwn5y+UvGEsv2nez1j/G/8f4T5S/YCz9+Xz48xH+IX3pC3vpdxPyl8tfMJZetO9mrX+M/w/hE4T/ASuoKNm6kpUWAAAAAElFTkSuQmCC">
+                    <a class="email" href="mailto:mbctamsa@naver.com">
+                        <h2>mbctamsa@naver.com</h2>
+                    </a>
+                </div>
+
+                <div class="contactWorks">
+                    <img class="contactWorksimage" src="data:image/png;base64,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" alt="">
+                    <h2>카카오톡 플러스 친구 'MBC 탐사기획팀'</h2>
+                </div>
+
+                <div class="contactWorks">
+                        <img class= "contactWorksimage" src="data:image/png;base64,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" alt="">
+                        <h2>02-789-0666</h2>
+                    </div>
+
+            <a class="jebo" href="mailto:mbctamsa@naver.com">    
+                <div class="reportButton">
+                    <h2>제보하러 가기</h2>
+                </div>        
+            </a>
+            
+            </div>
+        </article> 
+
+        <article id="material">
+            <h1 class="articleTitle">자료창고</h1>
+                <div class="artContentContainer">
+                    <div class="materialBox">
+                        <a class="LittleTitle" href="http://imnews.imbc.com/newszoomin/groupnews/groupnews_4/index2.html">
+                            <img class="imageBox" src="타임라인.JPG" alt="" width="150px">
+                            <h5>세월호 구조헬기 25대, 하루종일<br>
+                                뭐했나?</h5>
+                        </a>
+                    </div>
+
+                    <div class="materialBox">
+                        <a class="LittleTitle" href="https://infogram.com/1-1hxj48j1pdrq2vg">
+                            <img class="imageBox" src="./최애 살림살이.JPG" alt="" width="150px">
+                        <h5>시장님의 최애 살림살이 전격공개</h5>
+                    </div>
+                    <div class="materialBox">
+                        <a class="LittleTitle" href="http://imnews.imbc.com/newszoomin/groupnews/5209194_24487.html?menuid=groupnews">
+                            <img class="imageBox" src="./석면.JPG" alt="" width="300">
+                        <h5>석면지도가 엉터리인 학교는?</h5>
+                    </div>
+                    <div class="materialBox">
+                        <a class="LittleTitle" href="http://imnews.imbc.com/newszoomin/groupnews/5121842_24487.html?menuid=groupnews">
+                            <img class="imageBox" src="해외출장.JPG" alt="" width="300">
+                        <h5>해외출장 많이 간 국회의원은?</h5>
+                    </div>
+                    <div class="materialBox">
+                        <a class="LittleTitle" href="https://infogram.com/1--1h706ejvyey045y">
+                            <img class="imageBox" src="https://d3cdtxx03omvla.cloudfront.net/43927902_1561599750103.gif" alt="" width="300">
+                                <h5>서울시장의 관사 집중해부</h5>
+                        </a>
+                </div>
+            </article>
+    
+            <article id="tamsa">
+                <h1 class="articleTitle">탐사보도</h1>
+                <div class="artContentContainer">
+                    <a class="LittleTitle" href="tamsadetail.html">
+                    <div class="materialBox">
+                        <img class="LittleTitle" src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/afieldfile/2019/11/22/k20191101-1_5_1.jpg" alt="" width="300">
+                        <h5>세월호 구조학생… <br>
+                            헬기 못 태워 놓친 '골든타임'</h5>
+                    </a>        
+                    </div>
+                    <div class="materialBox">
+                        <img class="LittleTitle" src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/afieldfile/2019/10/15/hsauthor_thum_4.png" alt="" width="300">
+                        <h5>고교생 논문 저자,<br>
+                            어떻게 만들어지나?</h5>
+                    </div>
+                    <div class="materialBox">
+                        <img class="LittleTitle" src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/afieldfile/2019/09/23/groupnews_3_1.png" alt="" width="300">
+                        <h5>한화, 수상한 해외 진출</h5>
+                    </div>
+                    <div class="materialBox">
+                        <img class="LittleTitle" src="http://img.imnews.imbc.com/newszoomin/groupnews/__icsFiles/afieldfile/2019/09/23/groupnews_1_1.png" alt="" width="300">
+                        <h5>개통 하루만에 안전진단</h5>
+                    </div>
+                </div>
+            </article>
+    
+            <article id="member">
+                    <h1 class="articleTitle">구성원 소개</h1>
+                    <div class="memberContainer">
+                        <div class="memberBox">
+                            <img class="memberImage" src="./gyu hui.png" alt="">
+                            <h4>백승우 기자</h4>
+                            <a href="mailto@likehanbin@gmail.com">
+                                <h4>likehanbin@gmail.com</h4>
+                            </a>
+                        </div>
+    
+                        <div class="memberBox">
+                            <img class="memberImage" src="./gyu hui.png" alt="">
+                            <h4>남상호 기자</h4>
+                            <a href="mailto@likehanbin@gmail.com">
+                                <h4>likehanbin@gmail.com</h4>
+                            </a>
+                        </div>
+    
+                        <div class="memberBox">
+                            <img class="memberImage" src="./gyu hui.png" alt="">
+                            <h4>최유찬 기자</h4>
+                            <a href="mailto@likehanbin@gmail.com">
+                                <h4>likehanbin@gmail.com</h4>
+                            </a>
+                        </div>
+                        <div class="memberBox">
+                            <img class="memberImage" src="./gyu hui.png" alt="">
+                            <h4>장슬기 기자</h4>
+                            <a href="mailto@likehanbin@gmail.com">
+                                <h4>likehanbin@gmail.com</h4>
+                            </a>
+                        </div>
+                        <div class="memberBox">
+                            <img class="memberImage" src="./gyu hui.png" alt="">
+                            <h4>김유나 리서처</h4>
+                            <a href="mailto@likehanbin@gmail.com">
+                                <h4>likehanbin@gmail.com</h4>
+                            </a>
+                        </div>
+                        <div class="memberBox">
+                            <img class="memberImage" src="./gyu hui.png" alt="">
+                            <h4>김규희 리서처</h4>
+                            <a href="mailto@likehanbin@gmail.com">
+                                <h4>kbie1706@naver.com</h4>
+                            </a>
+                        </div>
+    
+                        <div class="memberBox">
+                            <img class="memberImage" src="./gyu hui.png" alt="" >
+                            <h4>최유림 AD</h4>
+                            <a href="mailto@kbie1706@naver.com">
+                                <h4>likehanbin@gmail.com</h4>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+        </main>
+        <footer>
+            <div class="footerContent">
+                <h1>
+                    MBC NEWS
+                </h1>
+                <h5>
+                    (주)문화방송.   대표이사 최승호<br>
+                        서울시 마포구 성암로 267 (03925)<br>
+                        MBC 대표전화 02-789-0011<br>
+                        Copyright© Since 1996, MBC All rights reserved.<br>
+                </h5>
+            </div>
+        </footer>
+
+        <div class="a">1번</div>
+        <div class="b">2번</div>
+        <div class="c">3번</div>
+    </body>
+    </html>
+    </main>
+</body>
+</html>
